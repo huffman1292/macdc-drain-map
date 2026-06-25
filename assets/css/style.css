@@ -1,6 +1,53 @@
-/* MACDC Drain Map Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+}
+
+header {
+    background: #005a9c;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+#map-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    height: calc(100vh - 100px);
+}
+
+#sidebar,
+#details {
+    background: white;
+    padding: 20px;
+    overflow: auto;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dbeafe;
+    overflow: auto;
+}
+
+#map-container svg {
+    width: 90%;
+    height: auto;
+    max-height: 90vh;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
 }
